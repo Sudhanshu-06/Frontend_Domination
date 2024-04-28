@@ -9,12 +9,13 @@ html,body{
     height:100%;
 }
 nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
     width:100%;
     padding:12px 30px;
     background-color:#f3f3f3;
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
+    
 
 }
 header{
@@ -41,4 +42,10 @@ aside{
     right:0;
     top:50%;
     transform: translate(0,-50%);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
 }
