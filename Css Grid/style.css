@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* #main{
+    height: 100%;
+    width: 100%;
+    background-color: lightskyblue;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    align-content:space-between ;
+    justify-content: space-between;
+    
+}
+.elem{
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    border: 3px solid #000;
+} */
+
+
+
+#nav{
+    /* background-color: red; */
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 50% 10% 10% 10% 10% 10%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px ;
+}
+#nav h1{
+    justify-self: start;
+}
