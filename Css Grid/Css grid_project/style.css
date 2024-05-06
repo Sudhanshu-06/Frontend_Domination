@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+height: 100%;
+width: 100%;
+background-color: #eaeaed;
+display: grid;
+grid-template-columns: 25% 25% 50%;
+grid-template-rows: 26% 56% 18%;
+}
+#left-top-left{
+    /* background-color: crimson; */
+    padding: 40px;
+}
+#square{
+    height: 25px;
+    width: 25px;
+    rotate: 45deg;
+    background-color: black;
+}
+#left-top-right{
+    /* background-color: rgb(56, 19, 83); */
+    justify-self: right;
+    padding: 40px;
+    text-align: right;
+}
+#left-top-right h4{
+    /* background-color: red; */
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#left-top-right h5{
+    /* background-color: red; */
+    font-size: 18px;
+    font-weight: 500;
+}
+#left-center{
+    /* background-color: royalblue; */
+    grid-column: 1/3;
+    padding: 40px;
+}
+#left-center h1{
+    font-size: 6vw;
+    text-transform: uppercase;
+    line-height: 6vw;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#left-center h1:nth-child(2n){
+    /* background-color: red; */
+    text-align: center;
+}
+#left-bottom{
+    /* background-color: chartreuse; */
+    grid-column: 1/3;
+    padding: 40px;
+}
+#left-bottom p{
+    width: 70%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #666;
+
+}
+#right{
+    /* background-color: blueviolet; */
+    grid-column: 3;
+    grid-row: 1/4;
+    padding: 40px;
+    padding-right: 150px;
+}
+#right video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#arrow{
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    color: #fff;
+    padding: 30px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+}
+#arrow i{
+    font-size: 40px;
+    font-weight: 100;
+
+}
+@media (max-width:600px) {
+    #main{
+        height: 100%;
+        width: 100%;
+        background-color: #eaeaed;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 60px 30% 10%;
+        }
+        #right{
+            /* background-color: blueviolet; */
+            grid-column: 1/4;
+            grid-row: 4;
+            padding: 40px;
+            padding-right: 150px;
+        }
+}
